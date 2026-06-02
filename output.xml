@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.9 on win32)" generated="2026-06-01T21:35:23.344354" rpa="false" schemaversion="5">
+<suite id="s1" name="Gate" source="C:\Users\Pedro Serpa\OneDrive\Documentos\Bitpulse-Engine\gate.robot">
+<kw name="Dado que o simulador esteja aberto" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-01T21:35:23.720103" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2026-06-01T21:35:25.482678" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-06-01T21:35:25.482678" level="FAIL">OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-06-01T21:35:23.720103" elapsed="1.769838">OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-06-01T21:35:25.490942" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SELECT_GATE}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-06-01T21:35:25.490942" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-06-01T21:35:23.720103" elapsed="1.770839">OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</status>
+</kw>
+<test id="s1-t1" name="CT01 - Porta AND com entradas 1 e 1 retorna saida 1" line="19">
+<status status="FAIL" start="2026-06-01T21:35:25.490942" elapsed="0.000999">Parent suite setup failed:
+OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</status>
+</test>
+<test id="s1-t2" name="CT02 - Porta OR com entradas 0 e 0 retorna saida 0" line="26">
+<status status="FAIL" start="2026-06-01T21:35:25.492941" elapsed="0.000000">Parent suite setup failed:
+OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</status>
+</test>
+<test id="s1-t3" name="CT03 - Porta NOT com entrada 1 retorna saida 0" line="33">
+<status status="FAIL" start="2026-06-01T21:35:25.493940" elapsed="0.000000">Parent suite setup failed:
+OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</status>
+</test>
+<test id="s1-t4" name="CT04 - Porta XOR com entradas 1 e 1 retorna saida 0" line="39">
+<status status="FAIL" start="2026-06-01T21:35:25.493940" elapsed="0.001001">Parent suite setup failed:
+OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</status>
+</test>
+<kw name="E o navegador seja fechado" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-01T21:35:25.495944" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-06-01T21:35:25.494941" elapsed="0.001003"/>
+</kw>
+<status status="FAIL" start="2026-06-01T21:35:23.344354" elapsed="2.151590">Suite setup failed:
+OSError: [WinError 4551] Uma política de Controle de Aplicativo bloqueou este arquivo</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Gate" id="s1" pass="0" fail="4" skip="0">Gate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
